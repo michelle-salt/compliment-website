@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<!--Add custom font-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header id="background">
+			<div>
+				<h2 id="compliment">Your handshake conveys intelligence, confidence and minor claminess.</h2>
+				<h1> </h1>
+				<button class="button" type="button" id="newCompliment" onclick="getNewCompliment()">Thanks!</button>
+			</div>
+		</header>
+	</body>
+
+	<script>
+		var getRandomColour = () => {
+			var h = Math.floor(Math.random() * 360);
+			var s = Math.floor(Math.random() * 100);
+			var l = Math.floor(Math.random() * 100);
+			
+			return `hsl(${h}deg, 94%, 83%)`;
+		};
+	</script>
+
+	<script>
+		function getNewCompliment() {
+			var complimentArray = [
+				"You're pretty", 
+				"You're SO pretty", 
+				"You're SUPER pretty"
+			];
+			var random = Math.floor(Math.random() * complimentArray.length);
+			var newCompliment = complimentArray[random];
+			document.getElementById("background").style.backgroundColor = getRandomColour();
+			document.getElementById("compliment").innerHTML = newCompliment;
+		}
+	</script>
+
+
+</html>

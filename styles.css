@@ -1,0 +1,67 @@
+/* FOUNDATION */
+body {
+	/* FLEX BOX PROPERTIES */
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:space-between;
+	
+	
+	/* BOX MODEL PROPERTIES */
+	margin: 0;
+	padding:0;
+	min-height: 100vh;
+	
+	/*Specify font family*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+body > * {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+/* HEADER SECTION */
+header {
+	color:black;
+	background-color: #e20000;
+	height:100vh;
+	width:100%;
+}
+
+header {
+	background-color: #b4f0ff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+header h2 {
+	font-size: 48px;
+	margin: 20px;
+	color: #000000;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/* Make all of the characters to uppercase
+	text-transform: uppercase;*/
+}
+
+/* BUTTON */
+  .button {
+	  background: none;
+	  border: rgb(0, 0, 0) solid 0.2em;
+	  display: block;
+	  margin: 0 auto;
+	  box-sizing: border-box;
+	  color: rgb(0, 0, 0);
+	  font-family: 'Montserrat', sans-serif;
+	  font-size: 28px;
+	  font-style: bold;
+  }
+
+  .button:focus {
+	outline: none;
+	box-shadow: none;
+  }
